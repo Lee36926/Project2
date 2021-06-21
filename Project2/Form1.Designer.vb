@@ -22,8 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnExit = New System.Windows.Forms.Button()
+        Me.BtnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -31,23 +31,23 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'Button1
+        'BtnExit
         '
-        Me.Button1.Location = New System.Drawing.Point(180, 138)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 33)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnExit.Location = New System.Drawing.Point(180, 138)
+        Me.BtnExit.Name = "BtnExit"
+        Me.BtnExit.Size = New System.Drawing.Size(114, 33)
+        Me.BtnExit.TabIndex = 0
+        Me.BtnExit.Text = "Exit"
+        Me.BtnExit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnLogin
         '
-        Me.Button2.Location = New System.Drawing.Point(15, 138)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 33)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Login"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnLogin.Location = New System.Drawing.Point(15, 138)
+        Me.BtnLogin.Name = "BtnLogin"
+        Me.BtnLogin.Size = New System.Drawing.Size(114, 33)
+        Me.BtnLogin.TabIndex = 1
+        Me.BtnLogin.Text = "Login"
+        Me.BtnLogin.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -100,8 +100,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnLogin)
+        Me.Controls.Add(Me.BtnExit)
         Me.Name = "Form1"
         Me.Text = "Shopping System"
         Me.ResumeLayout(False)
@@ -109,8 +109,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnExit As Button
+    Friend WithEvents BtnLogin As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label

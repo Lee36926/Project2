@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class FrmCus
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,24 +22,24 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DvgTable1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BtnLog = New System.Windows.Forms.Button()
+        CType(Me.DvgTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'DvgTable1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(424, 165)
-        Me.DataGridView1.TabIndex = 0
+        Me.DvgTable1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DvgTable1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
+        Me.DvgTable1.Location = New System.Drawing.Point(12, 12)
+        Me.DvgTable1.Name = "DvgTable1"
+        Me.DvgTable1.RowHeadersWidth = 51
+        Me.DvgTable1.RowTemplate.Height = 24
+        Me.DvgTable1.Size = New System.Drawing.Size(424, 165)
+        Me.DvgTable1.TabIndex = 0
         '
         'Column1
         '
@@ -62,32 +62,32 @@ Partial Class Form2
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 125
         '
-        'Button1
+        'BtnLog
         '
-        Me.Button1.Location = New System.Drawing.Point(361, 201)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnLog.Location = New System.Drawing.Point(361, 201)
+        Me.BtnLog.Name = "BtnLog"
+        Me.BtnLog.Size = New System.Drawing.Size(75, 23)
+        Me.BtnLog.TabIndex = 1
+        Me.BtnLog.Text = "Logout"
+        Me.BtnLog.UseVisualStyleBackColor = True
         '
-        'Form2
+        'FrmCus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(461, 250)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Form2"
+        Me.Controls.Add(Me.BtnLog)
+        Me.Controls.Add(Me.DvgTable1)
+        Me.Name = "FrmCus"
         Me.Text = "Customer"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DvgTable1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DvgTable1 As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnLog As Button
 End Class

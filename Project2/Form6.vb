@@ -10,12 +10,12 @@
             MessageBox.Show("Proses update data gagal." & vbCrLf & ex.Message,
            "Maaf", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        Form3.Show()
+        FrmAdmin.Show()
         Me.Hide()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form5.Show()
+        FrmDetails.Show()
         Me.Hide()
     End Sub
 End Class

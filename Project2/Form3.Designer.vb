@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class FrmAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -26,8 +26,8 @@ Partial Class Form3
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnAdd = New System.Windows.Forms.Button()
+        Me.BtnLog = New System.Windows.Forms.Button()
         CType(Me.DgvTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,33 +63,33 @@ Partial Class Form3
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 125
         '
-        'Button1
+        'BtnAdd
         '
-        Me.Button1.Location = New System.Drawing.Point(8, 260)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 30)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Add New"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnAdd.Location = New System.Drawing.Point(8, 260)
+        Me.BtnAdd.Name = "BtnAdd"
+        Me.BtnAdd.Size = New System.Drawing.Size(90, 30)
+        Me.BtnAdd.TabIndex = 1
+        Me.BtnAdd.Text = "Add New"
+        Me.BtnAdd.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnLog
         '
-        Me.Button2.Location = New System.Drawing.Point(395, 260)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(85, 30)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Logout"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnLog.Location = New System.Drawing.Point(395, 260)
+        Me.BtnLog.Name = "BtnLog"
+        Me.BtnLog.Size = New System.Drawing.Size(85, 30)
+        Me.BtnLog.TabIndex = 2
+        Me.BtnLog.Text = "Logout"
+        Me.BtnLog.UseVisualStyleBackColor = True
         '
-        'Form3
+        'FrmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(492, 349)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnLog)
+        Me.Controls.Add(Me.BtnAdd)
         Me.Controls.Add(Me.DgvTable)
-        Me.Name = "Form3"
+        Me.Name = "FrmAdmin"
         Me.Text = "Admin"
         CType(Me.DgvTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -97,8 +97,8 @@ Partial Class Form3
     End Sub
 
     Friend WithEvents DgvTable As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnAdd As Button
+    Friend WithEvents BtnLog As Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn

@@ -1,20 +1,16 @@
-﻿Public Class Form5
-    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+﻿Public Class FrmDetails
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
         Form6.Show()
         Me.Hide()
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Form3.Show()
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
+        FrmAdmin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnDel.Click
         Dim strName As String = txtName.Text
         Dim strPrice As String = txtPrice.Text
         Dim strSql = "DELETE FROM cus_order WHERE Name=('" & strName & "')"
@@ -26,7 +22,11 @@
             MessageBox.Show("Failed to delete data" & vbCrLf & ex.Message,
            "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        Form3.Show()
+        FrmAdmin.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub FrmDetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form4
+Partial Class FrmAdd
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,8 +25,8 @@ Partial Class Form4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnAdd = New System.Windows.Forms.Button()
+        Me.BtnCancel = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
@@ -58,51 +58,51 @@ Partial Class Form4
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Price"
         '
-        'Button1
+        'BtnAdd
         '
-        Me.Button1.Location = New System.Drawing.Point(8, 182)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "ADD"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnAdd.Location = New System.Drawing.Point(8, 182)
+        Me.BtnAdd.Name = "BtnAdd"
+        Me.BtnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.BtnAdd.TabIndex = 4
+        Me.BtnAdd.Text = "ADD"
+        Me.BtnAdd.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnCancel
         '
-        Me.Button2.Location = New System.Drawing.Point(223, 182)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnCancel.Location = New System.Drawing.Point(223, 182)
+        Me.BtnCancel.Name = "BtnCancel"
+        Me.BtnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.BtnCancel.TabIndex = 5
+        Me.BtnCancel.Text = "Cancel"
+        Me.BtnCancel.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(89, 62)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(209, 22)
         Me.TextBox2.TabIndex = 7
         '
         'txtPrice
         '
         Me.txtPrice.Location = New System.Drawing.Point(89, 94)
         Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(100, 22)
+        Me.txtPrice.Size = New System.Drawing.Size(209, 22)
         Me.txtPrice.TabIndex = 10
         '
-        'Form4
+        'FrmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(310, 231)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnCancel)
+        Me.Controls.Add(Me.BtnAdd)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form4"
+        Me.Name = "FrmAdd"
         Me.Text = "Add Item"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -112,8 +112,8 @@ Partial Class Form4
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnAdd As Button
+    Friend WithEvents BtnCancel As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents txtPrice As TextBox
 End Class

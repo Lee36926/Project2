@@ -1,6 +1,6 @@
-﻿Public Class Form3
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form4.show()
+﻿Public Class FrmAdmin
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnAdd.Click
+        FrmAdd.show()
         Me.Hide()
     End Sub
 
@@ -31,7 +31,7 @@
         End Try
 
         For Each row As Dictionary(Of String, Object) In Result
-            With Form5
+            With FrmDetails
                 .txtName.Text = row("Name").ToString
                 .txtPrice.Text = row("Price").ToString
             End With
@@ -42,10 +42,10 @@
             End With
         Next
         Me.Hide()
-        Form5.Show()
+        FrmDetails.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
         Form1.Show()
         Me.Hide()
     End Sub

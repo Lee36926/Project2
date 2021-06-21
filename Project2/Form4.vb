@@ -1,5 +1,5 @@
-﻿Public Class Form4
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+﻿Public Class FrmAdd
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnAdd.Click
 
         Dim strName As String = TextBox2.Text
         Dim decPrice As Decimal
@@ -14,8 +14,8 @@
         End Try
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form3.Show()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
+        FrmAdmin.Show()
         Me.Hide()
     End Sub
 
