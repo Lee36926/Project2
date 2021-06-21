@@ -4,7 +4,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub Read()
         Dim retrieveTable As New DataTable
         Dim RetrieveMySQL As New VBMySQL
         retrieveTable = RetrieveMySQL.Retrieve_Table("SELECT * FROM cus_order")
@@ -14,6 +14,9 @@
             DgvTable.Rows.Add(row("Id"), row("Name"), row("Price"))
         Next
         retrieveTable = Nothing
+    End Sub
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Read()
     End Sub
 
     Private Sub DgvTable_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvTable.CellClick
@@ -36,7 +39,7 @@
                 .txtPrice.Text = row("Price").ToString
             End With
 
-            With Form6
+            With FrmEdit
                 .txtName.Text = row("Name").ToString
                 .txtPrice.Text = row("Price").ToString
             End With
@@ -46,7 +49,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
-        Form1.Show()
+        FrmMain.Show()
         Me.Hide()
     End Sub
 End Class

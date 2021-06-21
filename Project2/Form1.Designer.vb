@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class FrmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -90,7 +90,7 @@ Partial Class Form1
         Me.TextBox2.Size = New System.Drawing.Size(154, 22)
         Me.TextBox2.TabIndex = 6
         '
-        'Form1
+        'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -102,7 +102,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(Me.BtnExit)
-        Me.Name = "Form1"
+        Me.Name = "FrmMain"
         Me.Text = "Shopping System"
         Me.ResumeLayout(False)
         Me.PerformLayout()

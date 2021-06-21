@@ -1,6 +1,6 @@
 ﻿Public Class FrmDetails
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
-        Form6.Show()
+        FrmEdit.Show()
         Me.Hide()
 
     End Sub
@@ -22,6 +22,7 @@
             MessageBox.Show("Failed to delete data" & vbCrLf & ex.Message,
            "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+        FrmAdmin.Read()
         FrmAdmin.Show()
         Me.Hide()
     End Sub

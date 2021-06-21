@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class FrmMain
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Dim username As String
         Dim password As String
@@ -20,5 +20,9 @@
         If (result = vbYes) Then
             Me.Close()
         End If
+    End Sub
+
+    Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

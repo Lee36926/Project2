@@ -12,6 +12,10 @@
         Catch ex As Exception
             MessageBox.Show("The data failed to stored." & vbCrLf & ex.Message, "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+        FrmAdmin.Read()
+        FrmAdmin.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
