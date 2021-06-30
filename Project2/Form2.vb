@@ -21,5 +21,7 @@
 
     End Sub
 
+    Private Sub DvgTable1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DvgTable1.CellContentClick
 
+    End Sub
 End Class
